@@ -1,15 +1,8 @@
 package com.example.testlearn;
 
-import android.text.style.IconMarginSpan;
 
 import org.junit.Test;
-
-import com.google.common.truth.*;
-
-import org.junit.*;
-
-import static org.junit.jupiter.api.Assertions.assertTrue;
-import static org.junit.Assert.*;
+import static com.google.common.truth.Truth.assertThat;
 
 
 public class RegistrationUtilTest {
@@ -20,7 +13,7 @@ public class RegistrationUtilTest {
                 "",
                 "123",
                 "123");
-        com.google.common.truth.Truth.assertThat(value).isFalse();
+        assertThat(value).isFalse();
     }
 
     @Test
@@ -29,7 +22,7 @@ public class RegistrationUtilTest {
                 "Adam",
                 "123",
                 "123");
-        com.google.common.truth.Truth.assertThat(value).isTrue();
+        assertThat(value).isTrue();
     }
 
     @Test
@@ -38,7 +31,7 @@ public class RegistrationUtilTest {
                 "Carl",
                 "123",
                 "123");
-        com.google.common.truth.Truth.assertThat(value).isFalse();
+        assertThat(value).isFalse();
     }
 
     @Test
@@ -47,7 +40,7 @@ public class RegistrationUtilTest {
                 "Adam",
                 "12345",
                 "qwerty");
-        com.google.common.truth.Truth.assertThat(value).isFalse();
+        assertThat(value).isFalse();
     }
 
     @Test
@@ -56,7 +49,7 @@ public class RegistrationUtilTest {
                 "Adam",
                 "",
                 "");
-        com.google.common.truth.Truth.assertThat(value).isFalse();
+        assertThat(value).isFalse();
     }
 
 //    @Test

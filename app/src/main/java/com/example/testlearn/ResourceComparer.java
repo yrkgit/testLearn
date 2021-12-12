@@ -1,5 +1,9 @@
 package com.example.testlearn;
 
-public class ResourceComparer {
+import android.content.Context;
 
+public class ResourceComparer {
+    boolean isEqual(Context context, int resId, String string){
+        return context.getString(resId)==string;
+    }
 }
